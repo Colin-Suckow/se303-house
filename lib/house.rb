@@ -21,9 +21,9 @@ class House
         when 1
             intro + PHRASES[0] + ".\n"
         when 2
-            intro + "the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[1] + " " + PHRASES[0] + ".\n"
         when 3
-            intro + "the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] + ".\n"
         when 4
             intro + "the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         when 5
