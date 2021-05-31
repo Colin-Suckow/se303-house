@@ -14,12 +14,20 @@ class House
         "the horse and the hound and the horn that belonged to"
     ]
 
+    def initialize(pirate_mode=false)
+        @pirate_mode = pirate_mode
+    end
+
     def line(line_number)
         intro + (line_number - 1).downto(0).map {|i| " #{PHRASES[i]}"}.join + ".\n"        
     end
 
     def intro
-        "This is"
+        if @pirate_mode
+            "Thar be"
+        else
+            "This is"
+        end
     end
 
     def recite
