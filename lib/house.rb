@@ -27,7 +27,7 @@ class House
         when 4
             intro + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 5
-            intro + "the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 6
             intro + "the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         when 7
