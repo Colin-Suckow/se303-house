@@ -29,19 +29,19 @@ class House
         when 5
             intro + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 6
-            intro + "the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[5] + " " + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 7
-            intro + "the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[6] + " " + PHRASES[5] + " " + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 8
-            intro + "the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[7] + " " + PHRASES[6] + " " + PHRASES[5] + " " + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 9
-            intro + "the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[8] + " " + PHRASES[7] + " " + PHRASES[6] + " " + PHRASES[5] + " " + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 10
-            intro + "the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[9] + " " + PHRASES[8] + " " + PHRASES[7] + " " + PHRASES[6] + " " + PHRASES[5] + " " + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 11
-            intro + "the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[10] + " " + PHRASES[9] + " " + PHRASES[8] + " " + PHRASES[7] + " " + PHRASES[6] + " " + PHRASES[5] + " " + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         when 12
-            intro + "the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            intro + PHRASES[11] + " " + PHRASES[10] + " " + PHRASES[9] + " " + PHRASES[8] + " " + PHRASES[7] + " " + PHRASES[6] + " " + PHRASES[5] + " " + PHRASES[4] + " " + PHRASES[3] + " " + PHRASES[2] + " " + PHRASES[1] + " " + PHRASES[0] +".\n"
         end
     end
 
