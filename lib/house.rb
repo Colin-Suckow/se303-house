@@ -1,5 +1,3 @@
-
-
 class House
     PHRASES = [
         "the house that Jack built",
