@@ -1,4 +1,7 @@
-phrases = [
+
+
+class House
+    PHRASES = [
     "the house that Jack built",
     "the malt that lay in",
     "the rat that ate",
@@ -11,13 +14,12 @@ phrases = [
     "the rooster that crowed in the morn that woke",
     "the farmer sowing his corn that kept",
     "the horse and the hound and the horn that belonged to"
-]
+    ]
 
-class House
     def line(line_number)
         case line_number
         when 1
-            intro + "the house that Jack built.\n"
+            intro + PHRASES[0] + ".\n"
         when 2
             intro + "the malt that lay in the house that Jack built.\n"
         when 3
