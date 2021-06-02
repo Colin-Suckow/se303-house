@@ -100,8 +100,13 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
   end
 
   def test_random_line_2
-    expected = "This is the cow with the crumpled horn that tossed the house that Jack built.\n"
+    expected = "This is the cat that killed the house that Jack built.\n"
     assert_equal expected, House.new(false, true).line(2)
+  end
+
+  def test_random_verse_2
+    expected = "This is the cat that killed the house that Jack built.\n"
+    assert_equal expected, House.new(false, false, true).line(2)
   end
 
 end

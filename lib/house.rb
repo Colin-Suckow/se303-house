@@ -1,9 +1,40 @@
 class House
-    def initialize(pirate_mode=false, random_lines=false)
+    def initialize(pirate_mode=false, random_lines=false, random_phrases=false)
         @pirate_mode = pirate_mode
+        @subjects = [
+        "malt",
+        "rat",
+        "cat",
+        "dog",
+        "cow with the crumpled horn",
+        "maiden all forlorn",
+        "man all tattered and torn",
+        "priest all shaven and shorn",
+        "rooster that crowed in the morn",
+        "farmer sowing his corn",
+        "horse and the hound and the horn"
+        ]
+
+        @verbs = [
+            "lay in",
+            "ate",
+            "killed",
+            "worried",
+            "tossed",
+            "milked",
+            "kissed",
+            "married",
+            "woke",
+            "kept",
+            "belonged to"
+        ]
+        if random_phrases
+            @subjects.shuffle!(random: Random.new(1))
+            @verbs.shuffle!(random: Random.new(1))
+        end
         @phrases = generate_phrases
         if random_lines
-            @phrases.shuffle!(random: Random.new(rand(1)))
+            @phrases.shuffle!(random: Random.new(1))
         end
     end
 
@@ -24,34 +55,6 @@ class House
     end
 
     def generate_phrases
-        11.times.map {|i| "the #{SUBJECTS[i]} that #{VERBS[i]}"}
+        11.times.map {|i| "the #{@subjects[i]} that #{@verbs[i]}"}
     end
-
-    SUBJECTS = [
-        "malt",
-        "rat",
-        "cat",
-        "dog",
-        "cow with the crumpled horn",
-        "maiden all forlorn",
-        "man all tattered and torn",
-        "priest all shaven and shorn",
-        "rooster that crowed in the morn",
-        "farmer sowing his corn",
-        "horse and the hound and the horn"
-    ]
-
-    VERBS = [
-        "lay in",
-        "ate",
-        "killed",
-        "worried",
-        "tossed",
-        "milked",
-        "kissed",
-        "married",
-        "woke",
-        "kept",
-        "belonged to"
-    ]
 end
