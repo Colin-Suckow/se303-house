@@ -1,6 +1,5 @@
 class House
     PHRASES = [
-        "the house that Jack built",
         "the malt that lay in",
         "the rat that ate",
         "the cat that killed",
@@ -19,7 +18,7 @@ class House
     end
 
     def line(line_number)
-        intro + (line_number - 1).downto(0).map {|i| " #{PHRASES[i]}"}.join + ".\n"        
+        intro + (line_number - 2).downto(0).map {|i| " #{PHRASES[i]}"}.join + " the house that Jack built.\n"        
     end
 
     def intro
