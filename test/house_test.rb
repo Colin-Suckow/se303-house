@@ -62,7 +62,7 @@ class HouseTest < Minitest::Test
 
   def test_line_12
     expected = "This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    assert_equal expected, House.new.line(12)
+    assert_equal expected, House.new().line(12)
   end
 
   def test_all_the_lines
@@ -97,6 +97,11 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
   def test_pirate_line_1
     expected = "Thar be the house that Jack built.\n"
     assert_equal expected, House.new(true).line(1)
+  end
+
+  def test_random_line_2
+    expected = "This is the cow with the crumpled horn that tossed the house that Jack built.\n"
+    assert_equal expected, House.new(false, true).line(2)
   end
 
 end

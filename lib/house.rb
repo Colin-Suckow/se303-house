@@ -1,24 +1,28 @@
 class House
-    PHRASES = [
-        "the malt that lay in",
-        "the rat that ate",
-        "the cat that killed",
-        "the dog that worried",
-        "the cow with the crumpled horn that tossed",
-        "the maiden all forlorn that milked",
-        "the man all tattered and torn that kissed",
-        "the priest all shaven and shorn that married",
-        "the rooster that crowed in the morn that woke",
-        "the farmer sowing his corn that kept",
-        "the horse and the hound and the horn that belonged to"
-    ]
+    
 
-    def initialize(pirate_mode=false)
+    def initialize(pirate_mode=false, random=false)
         @pirate_mode = pirate_mode
+        @phrases = [
+            "the malt that lay in",
+            "the rat that ate",
+            "the cat that killed",
+            "the dog that worried",
+            "the cow with the crumpled horn that tossed",
+            "the maiden all forlorn that milked",
+            "the man all tattered and torn that kissed",
+            "the priest all shaven and shorn that married",
+            "the rooster that crowed in the morn that woke",
+            "the farmer sowing his corn that kept",
+            "the horse and the hound and the horn that belonged to"
+        ]
+        if random
+            @phrases.shuffle!(random: Random.new(rand(1)))
+        end
     end
 
     def line(line_number)
-        intro + (line_number - 2).downto(0).map {|i| " #{PHRASES[i]}"}.join + " the house that Jack built.\n"        
+        intro + (line_number - 2).downto(0).map {|i| " #{@phrases[i]}"}.join + " the house that Jack built.\n"        
     end
 
     def intro
