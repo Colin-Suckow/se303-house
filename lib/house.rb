@@ -1,7 +1,5 @@
 class House
-    
-
-    def initialize(pirate_mode=false, random=false)
+    def initialize(pirate_mode=false, random_lines=false)
         @pirate_mode = pirate_mode
         @phrases = [
             "the malt that lay in",
@@ -16,7 +14,7 @@ class House
             "the farmer sowing his corn that kept",
             "the horse and the hound and the horn that belonged to"
         ]
-        if random
+        if random_lines
             @phrases.shuffle!(random: Random.new(rand(1)))
         end
     end
